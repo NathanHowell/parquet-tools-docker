@@ -1,4 +1,4 @@
-FROM maven:3-adoptopenjdk-8@sha256:bb2c2ab9cd24a13fe5f494d22c9404459613c603446b7c60afb1a945bc40aa5b AS build
+FROM maven:3-adoptopenjdk-16@sha256:2b19664f0ee98ea1828c052407b19eb5ecde52559bfd1f0f9d60c69ceba12949 AS build
 
 ARG VERSION=1.11.1
 RUN git clone --single-branch --depth=1 --branch=apache-parquet-${VERSION} https://github.com/apache/parquet-mr.git
